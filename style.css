@@ -1,7 +1,43 @@
-.navbar {
+ /* .navbar {
     width: 100%;
     background-color: #555;
     overflow: auto;
+  }
+  
+  
+  .navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  
+  .navbar a:hover {
+    background-color: #000;
+  }
+  
+ 
+  .active {
+    background-color: #04AA6D;
+  }
+  
+ 
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }  */
+
+  .navbar {
+    width: 100%;
+    background-color: rgb(248, 7, 7);
+    overflow: auto;
+    border-radius: 20px;
+    text-decoration-color: black;
   }
   
   /* Navbar links */
@@ -16,13 +52,13 @@
   
   /* Navbar links on mouse-over */
   .navbar a:hover {
-    background-color: #000;
+    background-color: rgb(4, 12, 3);
   }
   
   /* Current/active navbar link */
-  .active {
-    background-color: #04AA6D;
-  }
+  /* .active {
+    background-color: #c0f308;
+  } */
   
   /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
   @media screen and (max-width: 500px) {
@@ -31,14 +67,23 @@
       display: block;
     }
   }
+
   img{
     vertical-align: text-top;
     width: 150px;
     height: 160px;
   }
   .About{
-    background-color: #c5e510;
-  }
+     background-color: #4bd4a9;
+    
+
+    }
+   
+
+
+    
+
+
    
 .project img{
     vertical-align: text-top;
@@ -52,6 +97,7 @@
 }
 .project{
   background-color: rgb(183, 166, 19);
+
 }
 .project2{
   background-color: bisque;
