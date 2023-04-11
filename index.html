@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shinjan saha IOT website </title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <h1 align="center">Welcome to my IOT project Website</h1>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="navbar">
+  <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="#project12"><i class="fa fa-fw fa-search"></i> Projects</a>
+  <a href="#container"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+  
+</div>
+<div class="About">
+  
+    
+  
+   
+    <h1><button style="background-color: black; color: white; padding: 10px 20px; border-radius: 10px; font-size: 17px;">About me</button></h1>
+    <img src="./resources/My personal pic.jpg">
+    <br><p>Hello everyone welcome to my IOT website,I am Shinjan Saha a Engineering student, in this website I showcase my 
+    IOT projects. My intersets lies in the IOT,web dev & I also 
+    take keen interest in other latest hardware,software,embedded & automtation systems. 
+    <ul>
+     <h3><u>Education</u></h3>   <li>Techno main salt lake(Btech-ECE)</li>
+     <li>Aditya Academy senior secondary(CBSE Board)</li>
+     <h3><u>Skills</u></h3>
+     <li>C</li>
+     <li>C++</li>
+     <li>Python</li>
+     <li>Arduino</li>
+     <li>Web dev(Front-End)</li>
+     <li>Java</li>
+    </ul>   
+     </p>
+     </div>
+    </figure>
+  </article>
+  </span>
+     <div id="project12">
+<div class="project">
+   
+    <h1><button style="background-color: black; color: white; padding: 10px 20px; border-radius: 10px; font-size: 17px;">LED Distance Indicator</button></h1>
+    <img src="./resources/led distance image .jpg">
+    <br><h3>This Project measures the distance of the object from the sensor and is indicated by how many led,s are emitted  </h3>
+   
+    <h3><u>Components used in the project:-</u></h3>
+    <ul>
+        <li> Arduino uno R3</li>
+        <li> Led lights </li>
+        <li> 1 ohm resisitor</li>
+        <li> Ultrasonic sensor</li>
+        <li> Breadboard</li>
+        <li>jumper wires(male-male)</li>
+        <li>laptop</li>
+        </ul>  
+        <h3><u>Construction  of the project</u></h3>
+        <p>At first we set our connections we take our Breadboard , we connect our led,s we put our negeative side of led in 
+            negeative side of breadboard & positive side in any other side of breadboard ,then we set 1 ohm  resitance in series with respect to position of our led.then we take  our jumper wires
+            and connect them across our resistor in  similarly  way we conncted our resisitor to led After setting this 
+            connection we take our ultrasonic sensor & put them in breadboard such a way that it is not across the resistor/Led's.
+            Now we take our Arduino board & connect all the jumber wires across resistor & connect them to  digital pin 2-8
+            and now we connect our jumber wires from ultrasonic sensor to arduino board we put VCC to 5v,GND to GND,trig to 
+            pin 11 & echo to pin 12,we connect our GND in arduino to negeative side of breadboard where we  previously connected our 
+            led's negeative side  
+        </p>  
+        <h3><u>Working of the project</u></h3>
+        <p>Now to explain the working of the project we need to look into structure of our code.We at first set 
+            our variables for the pin & must remember our connection we made in "Construction of the project" 
+            section and set our variable according to pin number. for ex:- I set trig(component of ) to pin 11,
+             you can set it in 
+            any pin you want and  just make sure your connection is according to that. After setting the variable set the 
+            input & output pin according to connection such as trig will give
+             output & echo will take input & all th leds will be output .
+             Set distance & durtation use the appropiate formula, now we will set the loop where acoording to distance 
+            from the object the amount of led will be turned on.
+             Such as when the distance is 20 cm from the sensor only 2 led will be turned on,if only 1 led is turned on the distance is 25 cm 
+            now set loops for leds wheather they will be turned on or off and set the distance as the condition. 
+            Distance can be 
+            according to our choice the, ultrasonic sensor used in this project can measure distance between 2cm to 400cm.
+        </p>
+        <h3><u> Project in action </u></h3>
+        <video width="320" height="240" controls>
+            <source src="./resources/led distance working video.mp4" type="video/mp4">
+            
+           
+          </video> 
+          <h3><u> Applictation of the Project:-</u></h3>
+          <ul>
+            <li>It can be used in foggy & montanious road to create a early detection system where number of led can warn the driver 
+              of a potential cliff upfront on the road where visbilty are often dangerously low
+            </li>
+            <li>It can used infront of school,college or hospital where we can use bright led to warn drivers  about driving their vechile more 
+              catiously where we find most people  are crossing road  </li>
+          </ul>
+          </div>
+    <div class="project2">
+        <h1><button style="background-color: black; color: white; padding: 10px 20px; border-radius: 10px; font-size: 17px;">Ultrasonic Radar</button></h1>
+         <img src="./resources/radar input.jpg">
+         <h3>This Project measures the position & distance of an object</h3>
+         <h3><u>Components used in the project:-</u></h3>
+         <ul>
+            <li>Arduino uno R3</li>
+            <li>Breadboard</li>
+            <li>Jumper wires(male-male & female-male)</li>
+            <li>Ultrasonic sensor</li>
+            <li>Servo 9g motor</li>
+            <li>Laptop</li>
+
+         </ul>
+         <h3><u>Construction of the project</u></h3>
+         <p>
+           At first we take breadboard,we take the positive side of the breadboard and connect it with 5v in arduino 
+           & then we connect negeative side with GND in  arduino.we similarly connect VCC in sensor to +side &-side to 
+            GND in sensor.Then we connect Echo to pin 11,trig to pin 10 in arduino, After that we connecet +side of breadboard 
+            to red wire of servo motor, -side of breadboard to black wire of servo motor & then we connect the yellow wire of 
+            servo motor to pin 12 in Arduino.   
+         </p>
+         <h3><u>Working of the project</u></h3>
+         <p>
+            To talk about the working of the project, we need to talk about the code of the project,We at first set 
+            our variables for the pin & must remember our connection we made in "Construction of the project" 
+            section and set our variable according to pin number. for ex:- I set trig(component of ) to pin 10,
+             you can set it in any pin you want and  just make sure your connection is according to that. After setting the variable set the 
+             input & output pin according to connection such as trig will give
+              output & echo will take input .Set a loops
+             where we will set the degree about how much degree the servo motor will rotate or otherwise what is the range 
+             of the radar. it is set 15-165 degree.next we will calculate the distance use the correct formula.The  approximate distance will be shown in the form of 
+             length of the red line  is large that means object is closer to sensor and if the length of the red line is shorter that means the object is away from the sensor
+             Now this was our arduino code.
+             
+            <br>
+            Now we need to talk about our way of recieving the digital or visual output of the radar so it can be done with a 
+            help of a app called "Processing 4". The red part of the radar defines the detection of the object .And we use java for that we use particularly 3 libary:-
+            <ul>
+                <li>processing.serial(imports libary for serial communication)</li>
+                <li>java.awt.event.KeyEvent(imports library for reading the data from the serial port)</li>
+                <li>java.io.IOException</li>            
+            </ul>
+            <h3><u>project in action</u></h3>
+            
+            <video width="320" height="240" controls>
+            <source src="./resources/radar working.mp4" type="video/mp4">
+            </video>
+            <img src="./resources/working radar.png" align="left">
+
+
+         </p>  
+         <h3><u> Applictation of the Project:-</u></h3>
+         <ul>
+          <li>It can be used in the Military for detection of  enemy aircraft,& enemy trajectories like guided or unguided missiles  </li>
+          <li>It can be used in civilian airport for purpose of naviagating bird movement around the vicinity to avoid any 
+            fatal accident with the passesnger or cargo plane
+          </li> 
+        </ul>      
+</div>
+     </div>
+<div id="container">
+    <form>
+  
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="australia">India</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+  
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+  
+      <button><a href="https://t.me/Shinjansaha">SUBMIT</button></a>
+  
+    </form>
+  </div>      
+    
+
+    
+</body>
+</html>
